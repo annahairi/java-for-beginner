@@ -1,8 +1,11 @@
 package object.transport;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import object.MoveObject;
 
-public class Plane implements EngineVehicle, SaleObject, MoveObject
+import java.sql.SQLOutput;
+
+public class Plane implements EngineVehicle, SaleObject, MoveObject, Repairable
 {
     private boolean isEnableLeftPlaneEngine = false;
     private boolean isEnableRightPlaneEngine = false;
@@ -73,5 +76,28 @@ public class Plane implements EngineVehicle, SaleObject, MoveObject
     public int getDistance()
     {
         return distance;
+    }
+
+    /** HW 07.05.2020**/
+
+    boolean isNeedRepair = true;
+
+    int costOfRepair=500;
+
+    @Override
+
+    public boolean isNeedToRepair() {
+        return isNeedRepair;
+    }
+
+    @Override
+    public void repair(int cash) {
+        if (cash > costOfRepair){
+            isNeedRepair = false;
+            System.out.println("plane fixed");
+        }else {
+            costOfRepair = costOfRepair - cash;
+            System.out.println("Not enough money, add " + costOfRepair + " coins");
+        }
     }
 }
