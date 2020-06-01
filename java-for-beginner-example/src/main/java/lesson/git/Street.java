@@ -1,4 +1,4 @@
-package object;
+package lesson.git;
 
 import object.transport.Repairable;
 

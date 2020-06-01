@@ -1,12 +1,8 @@
 package lesson;
 
-import animal.Cat;
-import object.MoveObject;
-import object.Street;
-import object.transport.Boat;
+import lesson.git.Street;
 import object.transport.Car;
 import object.transport.Plane;
-import object.transport.Repairable;
 
 
 public class InterfaceLessonHW {

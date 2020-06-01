@@ -1,3 +1,4 @@
+import lesson.HashSetHomeWork;
 import lesson.InterfaceLesson;
 import lesson.InterfaceLessonHW;
 
@@ -28,7 +29,8 @@ public class StartPoint
         //TryCatchLesson.startLessonExample();
         //AbstractClassLesson.startLessonExample();
        // InterfaceLesson.startLessonExample();
-        InterfaceLessonHW.run();
+     //   InterfaceLessonHW.run();
+       HashSetHomeWork.hashSetMethod();
 
 
         //ПримерЗакоментированогоУрокаЧтоБыОнНеВыполнялся.startLessonExample()

@@ -4,7 +4,7 @@ import animal.Animal;
 import animal.Sheep;
 import animal.Tiger;
 import object.City;
-import object.Street;
+import lesson.git.Street;
 
 public class InheritLesson
 {

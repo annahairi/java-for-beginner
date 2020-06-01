@@ -1,5 +1,7 @@
 package object;
 
+import lesson.git.Street;
+
 import java.util.Arrays;
 
 public class City
